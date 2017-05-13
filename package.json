@@ -1,0 +1,15 @@
+{
+  "name": "metalsmith-purifycss",
+  "version": "0.1.0",
+  "description": "PurifyCSS plugin for Metalsmith static site generator",
+  "main": "lib/index.js",
+  "repository": "https://github.com/alex-ketch/metalsmith-purifycss",
+  "author": "alex-ketch <alex@ketch.me>",
+  "license": "MIT",
+  "dependencies": {
+    "purify-css": "^1.1.9"
+  },
+  "devDependencies": {
+    "metalsmith": "^2.3.0"
+  }
+}
