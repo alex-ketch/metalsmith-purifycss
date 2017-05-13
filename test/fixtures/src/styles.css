@@ -1,0 +1,40 @@
+h1 {
+  color: red;
+}
+
+.className {
+  font-style: italic;
+}
+
+.unusual\(test\) {
+  color: blue;
+}
+
+.unusedClass {
+  font-size: 20rem;
+}
+
+#whitelisted {
+  background-color: white;
+}
+
+.unusual-unused\(test\) {
+  color: blue;
+}
+
+/* JavaScript */
+.button-active {
+  border: 2px solid red;
+}
+
+.button-react {
+  border: 2px solid red;
+}
+
+.nestedFiles {
+  border: 2px solid black;
+}
+
+.something {
+  border: 2px solid red;
+}
