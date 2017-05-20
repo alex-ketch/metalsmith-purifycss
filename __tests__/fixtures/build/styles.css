@@ -1,12 +1,8 @@
-h1 {
-  color: red;
-}
-
 .className {
   font-style: italic;
 }
 
-.unusual\(test\) {
+.unusual\(class\) {
   color: blue;
 }
 
@@ -18,13 +14,17 @@ h1 {
   background-color: white;
 }
 
-.unusual-unused\(test\) {
+.unusual-class\(unused\) {
   color: blue;
 }
 
 /* JavaScript */
 .button-active {
   border: 2px solid red;
+}
+
+.unusual-JS\(class\) {
+  color: blue;
 }
 
 .button-react {
@@ -35,6 +35,6 @@ h1 {
   border: 2px solid black;
 }
 
-.something {
+.unusedJSClass {
   border: 2px solid red;
 }

@@ -2,6 +2,8 @@
   var half = 'button-';
   $(button).addClass(half + 'active');
 
+ $(button).addClass('unusual-JS(class)');
+
   // Can detect if class is joined.
   var dynamicClass = ['button', 'active'].join('-');
   $(button).addClass(dynamicClass);
