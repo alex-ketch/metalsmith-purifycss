@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`output is minified 1`] = `".unusual-JS\\\\(class\\\\),.unusual\\\\(class\\\\){color:#00f}.button-active,.button-react{border:2px solid red}.className{font-style:italic}.nestedFiles{border:2px solid #000}"`;
+
+exports[`unused selectors are removed 1`] = `
+".className {
+  font-style: italic;
+}
+
+.unusual\\\\(class\\\\) {
+  color: blue;
+}
+
+/* JavaScript */
+
+.button-active {
+  border: 2px solid red;
+}
+
+.unusual-JS\\\\(class\\\\) {
+  color: blue;
+}
+
+.button-react {
+  border: 2px solid red;
+}
+
+.nestedFiles {
+  border: 2px solid black;
+}"
+`;
