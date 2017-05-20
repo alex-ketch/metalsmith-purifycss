@@ -4,3 +4,7 @@ cache: yarn
 node_js:
   - "7"
   - "6"
+
+notifications:
+  email:
+    on_success: never
