@@ -41,12 +41,3 @@ Metalsmith()
 
 Note that if you'd like to overwrite the original CSS file, set the `output`
 name to match the `css` filename.
-
----
-
-## Limitations
-
-- The plugin currently only accepts one CSS file as the input, such as a
-compiled Sass stylesheet.
-- PurifyCSS does not seem to prune HTML tags (`h1`, `p`, etc.), but works
-great for CSS selectors such as classes and IDs.

@@ -74,3 +74,28 @@ test('whitelist option is respected', () => {
     expect(files['styles-cleaned.css'].contents.toString()).toContain('#whitelisted');
   })
 });
+
+test('an array of stylesheets is accepted', () => {
+  const options = {
+    content: ['*.html', '*.js'],
+    css: ['styles.css', 'styles2.css'],
+    output: 'styles-cleaned.css',
+  };
+
+  return build(options).then((files) => {
+    expect(files['styles-cleaned.css'].contents.toString()).toContain('.multipleCSSfiles');
+  })
+});
+
+
+test('a glob is accepted for CSS parameter', () => {
+  const options = {
+    content: ['*.html', '*.js'],
+    css: ['*.css'],
+    output: 'styles-cleaned.css',
+  };
+
+  return build(options).then((files) => {
+    expect(files['styles-cleaned.css'].contents.toString()).toContain('span');
+  })
+});
