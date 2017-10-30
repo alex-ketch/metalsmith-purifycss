@@ -99,3 +99,27 @@ test('a glob is accepted for CSS parameter', () => {
     expect(files['styles-cleaned.css'].contents.toString()).toContain('span');
   })
 });
+
+test('original file is removed', () => {
+  const options = {
+    content: ['*.html', '*.js'],
+    css: ['styles.css'],
+    removeOriginal: true
+  };
+
+  return build(options).then((files) => {
+    expect(Object.keys(files)).not.toContain('styles.css');
+  })
+});
+
+test('globs of original files are removed', () => {
+  const options = {
+    content: ['*.html', '*.js'],
+    css: ['*.css'],
+    removeOriginal: true,
+  };
+
+  return build(options).then((files) => {
+    expect(Object.keys(files).toString()).not.toMatch('css');
+  })
+});

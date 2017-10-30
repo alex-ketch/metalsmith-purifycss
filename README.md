@@ -20,7 +20,14 @@ yarn add metalsmith-purifycss --dev
 ---
 ## Usage
 
-The API interface is [exactly the same](https://github.com/purifycss/purifycss#api-in-depth) as for PurifyCSS.
+The API interface is [mostly the same](https://github.com/purifycss/purifycss#api-in-depth) as PurifyCSS.
+
+### Additional options:
+
+| Key              | Type    | Description                                                |  
+| :--------------- | :------ | :--------------------------------------------------------- |  
+| `removeOriginal` | boolean | Removes files matched by the `css` option from the output. |  
+
 
 This is the simplest setup:
 ```js
